@@ -2,17 +2,19 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "Dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/index.js",
+    "dev": "tsc -w & nodemon Dist/index.js"
   },
-  "author": "mateo",
+  "author": "mateo and nerea",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
-    "typescript": "^4.4.3"
+    "express": "^4.17.1"
   },
   "devDependencies": {
-    "@types/express": "^4.17.13"
+    "@types/express": "^4.17.13",
+    "typescript": "^4.4.4"
   }
 }
